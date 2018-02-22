@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <EditText
+            android:id="@+id/add_task_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollHorizontally="true"
+            android:layout_centerHorizontal="true"
+            android:hint="Введите новое задание"/>
+    <TextView
+            android:id="@+id/choose_color_text"
+            android:text="Выбирете цвет фона"
+            android:layout_below="@+id/add_task_field"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <HorizontalScrollView
+            android:id="@+id/scroll_color_blocks"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/choose_color_text"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+    <LinearLayout
+            android:id="@+id/color_blocks"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/add_task_field" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton
+                android:id="@+id/block_red"
+                android:layout_marginLeft="12dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="60dp" android:layout_height="60dp"/>
+        <ImageButton
+                android:id="@+id/block_blue"
+                android:layout_marginLeft="12dp"
+                android:background="@color/blue"
+                android:layout_width="60dp" android:layout_height="60dp"/>
+        <ImageButton
+                android:id="@+id/block_purple"
+                android:layout_marginLeft="12dp"
+                android:background="@color/purple"
+                android:layout_width="60dp" android:layout_height="60dp"/>
+        <ImageButton
+                android:id="@+id/block_pink"
+                android:layout_marginLeft="12dp"
+                android:background="@color/pink"
+                android:layout_width="60dp" android:layout_height="60dp"/>
+        <ImageButton
+                android:id="@+id/block_black"
+                android:layout_marginLeft="12dp"
+                android:background="@color/black"
+                android:layout_width="60dp" android:layout_height="60dp"/>
+        <ImageButton
+                android:id="@+id/block_dark_teal"
+                android:layout_marginLeft="12dp"
+                android:background="@color/dark_teal"
+                android:layout_width="60dp" android:layout_height="60dp"/>
+        <ImageButton
+                android:id="@+id/block_bardo"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/bardo"
+                android:layout_width="60dp" android:layout_height="60dp"/>
+        <ImageButton
+                android:id="@+id/block_orange"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/orange"
+                android:layout_width="60dp" android:layout_height="60dp"/>
+        <ImageButton
+                android:id="@+id/block_salat_orange"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/salat_green"
+                android:layout_width="60dp" android:layout_height="60dp"/>
+    </LinearLayout>
+    </HorizontalScrollView>
+    <Button android:id="@+id/ok_btn_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scroll_color_blocks"
+            android:text="Добавить"/>
+
+    <Button android:id="@+id/back_btn_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scroll_color_blocks"
+            android:layout_alignParentRight="true"
+            android:text="Отмена"/>
+</RelativeLayout>
